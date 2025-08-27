@@ -243,11 +243,11 @@ const BorrowedBooks: React.FC = () => {
           📚 Borrowing Guidelines
         </h3>
         <ul className="text-sm text-gray-600 space-y-1">
-          <li>• Books can be borrowed for up to 14 days</li>
-          <li>• You can extend borrowing period once before the due date</li>
-          <li>• Return books on time to avoid late fees</li>
-          <li>• Maximum of 5 books can be borrowed at once</li>
-          <li>• Overdue books cannot be renewed</li>
+          <li>Books can be borrowed for up to 14 days</li>
+          <li>You can extend borrowing period once before the due date</li>
+          <li>Return books on time to avoid late fees</li>
+          <li>Maximum of 5 books can be borrowed at once</li>
+          <li>Overdue books cannot be renewed</li>
         </ul>
       </div>
     </div>
