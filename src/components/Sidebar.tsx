@@ -1,4 +1,3 @@
-// Save this as src/components/Sidebar.tsx
 import React, { useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { getUserFromToken } from "../utils/auth";
