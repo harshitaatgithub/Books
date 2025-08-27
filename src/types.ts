@@ -4,9 +4,6 @@ export interface User {
   password: string;
   role: string;
   email: string;
-  favorites?: number[];
-  borrowedBooks?: number[];
-  booksToReturn?: number[];
 }
 
 export interface Book {
