@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { loginUser } from "../utils/auth";
 import { FaUser, FaLock, FaEnvelope, FaEye, FaEyeSlash } from "react-icons/fa";
+import type {User} from "../types" 
 
 const Login = () => {
   const [isRegistering, setIsRegistering] = useState(false);
@@ -77,7 +78,7 @@ const Login = () => {
 
     // Check if username or email already exists
     const userExists = existingUsers.some(
-      (user: any) =>
+      (user: User) =>
         user.username === formData.username || user.email === formData.email
     );
 
@@ -124,7 +125,7 @@ const Login = () => {
             <FaUser className="text-white text-2xl" />
           </div>
           <h1 className="text-3xl font-bold text-gray-800 mb-2">
-            {isRegistering ? "Create Account" : "Welcome Back"}
+            {isRegistering ? "Create Account" : "Welcome to Your Library"}
           </h1>
           <p className="text-gray-600">
             {isRegistering
@@ -262,29 +263,7 @@ const Login = () => {
                 {isRegistering ? "Sign In Instead" : "Create New Account"}
               </button>
             </div>
-
-            {/* Demo Credentials */}
-            {!isRegistering && (
-              <div className="bg-yellow-50 border border-yellow-200 rounded-xl p-4 mt-6">
-                <p className="text-yellow-800 text-sm font-semibold mb-2">
-                  Demo Credentials:
-                </p>
-                <div className="text-yellow-700 text-sm space-y-1">
-                  <p>
-                    <strong>User:</strong> user1 / userpass1
-                  </p>
-                  <p>
-                    <strong>Admin:</strong> admin5 / adminpass5
-                  </p>
-                </div>
-              </div>
-            )}
           </form>
-        </div>
-
-        {/* Footer */}
-        <div className="text-center mt-8 text-gray-500 text-sm">
-          <p>&copy; 2025 Library Management System. All rights reserved.</p>
         </div>
       </div>
     </div>
