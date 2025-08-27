@@ -1,7 +1,7 @@
 import React, { useState } from "react";
+import type { User } from "../types";
 import usersRaw from "../data/users.json";
 import { getUserFromToken } from "../utils/auth";
-import type { User } from "../types";
 import { FaUsers, FaSearch, FaUserGraduate, FaEnvelope } from "react-icons/fa";
 
 const StudentsInfo: React.FC = () => {
@@ -22,13 +22,13 @@ const StudentsInfo: React.FC = () => {
 
   // Filter out admin users and get only regular users (students)
   const students = usersRaw.filter(
-    (userData: any) =>
+    (userData: User) =>
       userData.role === "user" && !userData.username.startsWith("admin")
   );
 
   // Apply search filter
   const filteredStudents = students.filter(
-    (student: any) =>
+    (student: User) =>
       student.username.toLowerCase().includes(searchQuery.toLowerCase()) ||
       student.email.toLowerCase().includes(searchQuery.toLowerCase())
   );
@@ -61,7 +61,7 @@ const StudentsInfo: React.FC = () => {
         <div className="bg-purple-50 rounded-lg p-4 text-center">
           <FaEnvelope size={32} className="mx-auto text-purple-500 mb-2" />
           <p className="text-2xl font-bold text-gray-800">
-            {new Set(students.map((s: any) => s.email.split("@")[1])).size}
+            {new Set(students.map((s: User) => s.email.split("@")[1])).size}
           </p>
           <p className="text-gray-600 text-sm">Email Domains</p>
         </div>
@@ -109,7 +109,7 @@ const StudentsInfo: React.FC = () => {
                 </tr>
               </thead>
               <tbody className="bg-white divide-y divide-gray-200">
-                {filteredStudents.map((student: any, index: number) => (
+                {filteredStudents.map((student: User, index: number) => (
                   <tr
                     key={student.id}
                     className="hover:bg-gray-50 transition-colors"
@@ -187,7 +187,7 @@ const StudentsInfo: React.FC = () => {
                 "data:text/csv;charset=utf-8," +
                 "Name,Email\n" +
                 filteredStudents
-                  .map((s: any) => `${s.username},${s.email}`)
+                  .map((s: User) => `${s.username},${s.email}`)
                   .join("\n");
               const encodedUri = encodeURI(csvContent);
               const link = document.createElement("a");
@@ -204,7 +204,7 @@ const StudentsInfo: React.FC = () => {
           <button
             onClick={() => {
               navigator.clipboard.writeText(
-                filteredStudents.map((s: any) => s.email).join(", ")
+                filteredStudents.map((s: User) => s.email).join(", ")
               );
               alert("Email addresses copied to clipboard!");
             }}
@@ -234,7 +234,7 @@ const StudentsInfo: React.FC = () => {
           <li>
             • Unique email domains:{" "}
             <strong>
-              {new Set(students.map((s: any) => s.email.split("@")[1])).size}
+              {new Set(students.map((s: User) => s.email.split("@")[1])).size}
             </strong>
           </li>
           <li>
