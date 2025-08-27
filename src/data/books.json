@@ -1,0 +1,452 @@
+[
+  {
+    "id": 1,
+    "title": "The Crystal Key",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/1/200/300.jpg",
+    "description": "A captivating tale titled 'The Crystal Key' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1, 3],
+    "favorited_by": [1, 4]
+  },
+  {
+    "id": 2,
+    "title": "Fragments of Light",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/2/200/300.jpg",
+    "description": "A captivating tale titled 'Fragments of Light' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [2, 4],
+    "favorited_by": [2, 3]
+  },
+  {
+    "id": 3,
+    "title": "The Forgotten Path",
+    "author": "Lucas Gray",
+    "image": "https://picsum.photos/seed/3/200/300.jpg",
+    "description": "A captivating tale titled 'The Forgotten Path' by Lucas Gray, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1, 6],
+    "favorited_by": [6]
+  },
+  {
+    "id": 4,
+    "title": "Labyrinth of Souls",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/4/200/300.jpg",
+    "description": "A captivating tale titled 'Labyrinth of Souls' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [7],
+    "favorited_by": [7, 8]
+  },
+  {
+    "id": 5,
+    "title": "Labyrinth of Souls",
+    "author": "Ava Mitchell",
+    "image": "https://picsum.photos/seed/5/200/300.jpg",
+    "description": "A captivating tale titled 'Labyrinth of Souls' by Ava Mitchell, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [8, 9],
+    "favorited_by": [9]
+  },
+  {
+    "id": 6,
+    "title": "Realm of Mist",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/6/200/300.jpg",
+    "description": "A captivating tale titled 'Realm of Mist' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [11],
+    "favorited_by": [11, 12]
+  },
+  {
+    "id": 7,
+    "title": "The Eternal Flame",
+    "author": "Noah Parker",
+    "image": "https://picsum.photos/seed/7/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Noah Parker, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [12, 13],
+    "favorited_by": [13]
+  },
+  {
+    "id": 8,
+    "title": "Echoes of Tomorrow",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/8/200/300.jpg",
+    "description": "A captivating tale titled 'Echoes of Tomorrow' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [14],
+    "favorited_by": [14, 16]
+  },
+  {
+    "id": 9,
+    "title": "Voices from the Deep",
+    "author": "Liam Hayes",
+    "image": "https://picsum.photos/seed/9/200/300.jpg",
+    "description": "A captivating tale titled 'Voices from the Deep' by Liam Hayes, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [16, 17],
+    "favorited_by": [17]
+  },
+  {
+    "id": 10,
+    "title": "The Eternal Flame",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/10/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [18],
+    "favorited_by": [18, 19]
+  },
+  {
+    "id": 11,
+    "title": "Realm of Mist",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/11/200/300.jpg",
+    "description": "A captivating tale titled 'Realm of Mist' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [19],
+    "favorited_by": [1, 19]
+  },
+  {
+    "id": 12,
+    "title": "The Forgotten Path",
+    "author": "Liam Hayes",
+    "image": "https://picsum.photos/seed/12/200/300.jpg",
+    "description": "A captivating tale titled 'The Forgotten Path' by Liam Hayes, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1, 2],
+    "favorited_by": [2]
+  },
+  {
+    "id": 13,
+    "title": "Dreams of Fire",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/13/200/300.jpg",
+    "description": "A captivating tale titled 'Dreams of Fire' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [3, 4],
+    "favorited_by": [3, 4]
+  },
+  {
+    "id": 14,
+    "title": "Whispers in the Wind",
+    "author": "Sophia Turner",
+    "image": "https://picsum.photos/seed/14/200/300.jpg",
+    "description": "A captivating tale titled 'Whispers in the Wind' by Sophia Turner, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [6],
+    "favorited_by": [6]
+  },
+  {
+    "id": 15,
+    "title": "Shadows of the Past",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/15/200/300.jpg",
+    "description": "A captivating tale titled 'Shadows of the Past' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [7, 8],
+    "favorited_by": [7, 8]
+  },
+  {
+    "id": 16,
+    "title": "Secrets of the Moon",
+    "author": "Noah Parker",
+    "image": "https://picsum.photos/seed/16/200/300.jpg",
+    "description": "A captivating tale titled 'Secrets of the Moon' by Noah Parker, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [9],
+    "favorited_by": [9, 11]
+  },
+  {
+    "id": 17,
+    "title": "Beyond the Stars",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/17/200/300.jpg",
+    "description": "A captivating tale titled 'Beyond the Stars' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [11, 12],
+    "favorited_by": [12]
+  },
+  {
+    "id": 18,
+    "title": "The Iron Gate",
+    "author": "Henry Brooks",
+    "image": "https://picsum.photos/seed/18/200/300.jpg",
+    "description": "A captivating tale titled 'The Iron Gate' by Henry Brooks, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [13, 14],
+    "favorited_by": [13, 14]
+  },
+  {
+    "id": 19,
+    "title": "Labyrinth of Souls",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/19/200/300.jpg",
+    "description": "A captivating tale titled 'Labyrinth of Souls' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [16],
+    "favorited_by": [16]
+  },
+  {
+    "id": 20,
+    "title": "Fragments of Light",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/20/200/300.jpg",
+    "description": "A captivating tale titled 'Fragments of Light' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [17, 18],
+    "favorited_by": [17, 18]
+  },
+  {
+    "id": 21,
+    "title": "The Last Horizon",
+    "author": "Ava Mitchell",
+    "image": "https://picsum.photos/seed/21/200/300.jpg",
+    "description": "A captivating tale titled 'The Last Horizon' by Ava Mitchell, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [19],
+    "favorited_by": [19]
+  },
+  {
+    "id": 22,
+    "title": "Echoes of Tomorrow",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/22/200/300.jpg",
+    "description": "A captivating tale titled 'Echoes of Tomorrow' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1],
+    "favorited_by": [1]
+  },
+  {
+    "id": 23,
+    "title": "Whispers in the Wind",
+    "author": "Ava Mitchell",
+    "image": "https://picsum.photos/seed/23/200/300.jpg",
+    "description": "A captivating tale titled 'Whispers in the Wind' by Ava Mitchell, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [2, 3],
+    "favorited_by": [2, 3]
+  },
+  {
+    "id": 24,
+    "title": "Echoes of Tomorrow",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/24/200/300.jpg",
+    "description": "A captivating tale titled 'Echoes of Tomorrow' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [4, 6],
+    "favorited_by": [4, 6]
+  },
+  {
+    "id": 25,
+    "title": "Realm of Mist",
+    "author": "Liam Hayes",
+    "image": "https://picsum.photos/seed/25/200/300.jpg",
+    "description": "A captivating tale titled 'Realm of Mist' by Liam Hayes, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [7],
+    "favorited_by": [7]
+  },
+  {
+    "id": 26,
+    "title": "Shadows of the Past",
+    "author": "Mia Sullivan",
+    "image": "https://picsum.photos/seed/26/200/300.jpg",
+    "description": "A captivating tale titled 'Shadows of the Past' by Mia Sullivan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [8, 9],
+    "favorited_by": [8, 9]
+  },
+  {
+    "id": 27,
+    "title": "Realm of Mist",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/27/200/300.jpg",
+    "description": "A captivating tale titled 'Realm of Mist' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [11],
+    "favorited_by": [11]
+  },
+  {
+    "id": 28,
+    "title": "Tides of Time",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/28/200/300.jpg",
+    "description": "A captivating tale titled 'Tides of Time' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [12, 13],
+    "favorited_by": [12, 13]
+  },
+  {
+    "id": 29,
+    "title": "The Eternal Flame",
+    "author": "Noah Parker",
+    "image": "https://picsum.photos/seed/29/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Noah Parker, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [14, 16],
+    "favorited_by": [14, 16]
+  },
+  {
+    "id": 30,
+    "title": "Chronicles of the Lost",
+    "author": "Lucas Gray",
+    "image": "https://picsum.photos/seed/30/200/300.jpg",
+    "description": "A captivating tale titled 'Chronicles of the Lost' by Lucas Gray, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [17],
+    "favorited_by": [17]
+  },
+  {
+    "id": 31,
+    "title": "The Eternal Flame",
+    "author": "Lucas Gray",
+    "image": "https://picsum.photos/seed/31/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Lucas Gray, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [18, 19],
+    "favorited_by": [18, 19]
+  },
+  {
+    "id": 32,
+    "title": "Voices from the Deep",
+    "author": "Liam Hayes",
+    "image": "https://picsum.photos/seed/32/200/300.jpg",
+    "description": "A captivating tale titled 'Voices from the Deep' by Liam Hayes, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1],
+    "favorited_by": [1]
+  },
+  {
+    "id": 33,
+    "title": "Fragments of Light",
+    "author": "Sophia Turner",
+    "image": "https://picsum.photos/seed/33/200/300.jpg",
+    "description": "A captivating tale titled 'Fragments of Light' by Sophia Turner, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [2, 3],
+    "favorited_by": [2, 3]
+  },
+  {
+    "id": 34,
+    "title": "The Hidden Truth",
+    "author": "Ava Mitchell",
+    "image": "https://picsum.photos/seed/34/200/300.jpg",
+    "description": "A captivating tale titled 'The Hidden Truth' by Ava Mitchell, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [4, 6],
+    "favorited_by": [4, 6]
+  },
+  {
+    "id": 35,
+    "title": "The Hidden Truth",
+    "author": "Sophia Turner",
+    "image": "https://picsum.photos/seed/35/200/300.jpg",
+    "description": "A captivating tale titled 'The Hidden Truth' by Sophia Turner, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [7],
+    "favorited_by": [7]
+  },
+  {
+    "id": 36,
+    "title": "Tides of Time",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/36/200/300.jpg",
+    "description": "A captivating tale titled 'Tides of Time' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [8, 9],
+    "favorited_by": [8, 9]
+  },
+  {
+    "id": 37,
+    "title": "Chronicles of the Lost",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/37/200/300.jpg",
+    "description": "A captivating tale titled 'Chronicles of the Lost' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [11, 12],
+    "favorited_by": [11, 12]
+  },
+  {
+    "id": 38,
+    "title": "Voices from the Deep",
+    "author": "Lucas Gray",
+    "image": "https://picsum.photos/seed/38/200/300.jpg",
+    "description": "A captivating tale titled 'Voices from the Deep' by Lucas Gray, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [13],
+    "favorited_by": [13]
+  },
+  {
+    "id": 39,
+    "title": "The Eternal Flame",
+    "author": "Liam Hayes",
+    "image": "https://picsum.photos/seed/39/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Liam Hayes, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [14, 16],
+    "favorited_by": [14, 16]
+  },
+  {
+    "id": 40,
+    "title": "The Forgotten Path",
+    "author": "Sophia Turner",
+    "image": "https://picsum.photos/seed/40/200/300.jpg",
+    "description": "A captivating tale titled 'The Forgotten Path' by Sophia Turner, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [17, 18],
+    "favorited_by": [17, 18]
+  },
+  {
+    "id": 41,
+    "title": "Shadows of the Past",
+    "author": "Henry Brooks",
+    "image": "https://picsum.photos/seed/41/200/300.jpg",
+    "description": "A captivating tale titled 'Shadows of the Past' by Henry Brooks, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [19],
+    "favorited_by": [19]
+  },
+  {
+    "id": 42,
+    "title": "The Silent Watcher",
+    "author": "Sophia Turner",
+    "image": "https://picsum.photos/seed/42/200/300.jpg",
+    "description": "A captivating tale titled 'The Silent Watcher' by Sophia Turner, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [1, 2],
+    "favorited_by": [1, 2]
+  },
+  {
+    "id": 43,
+    "title": "Voices from the Deep",
+    "author": "Ava Mitchell",
+    "image": "https://picsum.photos/seed/43/200/300.jpg",
+    "description": "A captivating tale titled 'Voices from the Deep' by Ava Mitchell, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [3, 4],
+    "favorited_by": [3, 4]
+  },
+  {
+    "id": 44,
+    "title": "The Last Horizon",
+    "author": "Mia Sullivan",
+    "image": "https://picsum.photos/seed/44/200/300.jpg",
+    "description": "A captivating tale titled 'The Last Horizon' by Mia Sullivan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [6, 7],
+    "favorited_by": [6, 7]
+  },
+  {
+    "id": 45,
+    "title": "The Silent Watcher",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/45/200/300.jpg",
+    "description": "A captivating tale titled 'The Silent Watcher' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [8],
+    "favorited_by": [8]
+  },
+  {
+    "id": 46,
+    "title": "The Eternal Flame",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/46/200/300.jpg",
+    "description": "A captivating tale titled 'The Eternal Flame' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [9, 11],
+    "favorited_by": [9, 11]
+  },
+  {
+    "id": 47,
+    "title": "Whispers in the Wind",
+    "author": "Olivia Bennett",
+    "image": "https://picsum.photos/seed/47/200/300.jpg",
+    "description": "A captivating tale titled 'Whispers in the Wind' by Olivia Bennett, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [12, 13],
+    "favorited_by": [12, 13]
+  },
+  {
+    "id": 48,
+    "title": "Beyond the Stars",
+    "author": "Grace Morgan",
+    "image": "https://picsum.photos/seed/48/200/300.jpg",
+    "description": "A captivating tale titled 'Beyond the Stars' by Grace Morgan, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [14],
+    "favorited_by": [14]
+  },
+  {
+    "id": 49,
+    "title": "The Crystal Key",
+    "author": "Lucas Gray",
+    "image": "https://picsum.photos/seed/49/200/300.jpg",
+    "description": "A captivating tale titled 'The Crystal Key' by Lucas Gray, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [16, 17],
+    "favorited_by": [16, 17]
+  },
+  {
+    "id": 50,
+    "title": "The Iron Gate",
+    "author": "Emma Clarke",
+    "image": "https://picsum.photos/seed/50/200/300.jpg",
+    "description": "A captivating tale titled 'The Iron Gate' by Emma Clarke, exploring imagination, mystery, and emotional depth.",
+    "borrowed_by": [18, 19],
+    "favorited_by": [18, 19]
+  }
+]
