@@ -8,11 +8,11 @@ import {
   FaBookOpen,
   FaUsers,
   FaCog,
-  FaBars,
   FaTimes,
   FaSignOutAlt,
   FaChevronLeft,
   FaChevronRight,
+  FaBars,
 } from "react-icons/fa";
 
 interface SidebarProps {
@@ -30,62 +30,62 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/login", { replace: true });
+    // Force navigation and reload
+    navigate("/login");
+    window.location.reload();
   };
 
   const isActive = (path: string) => location.pathname === path;
 
   const navItems = [
-    { path: "/dashboard", icon: FaHome, label: "Dashboard" },
-    { path: "/library", icon: FaBook, label: "Browse Books" },
-    { path: "/borrowed", icon: FaBookOpen, label: "My Books" },
-    { path: "/favorites", icon: FaHeart, label: "Favorites" },
+    { path: "/dashboard", icon: FaHome, label: "Dashboard", color: "blue" },
+    { path: "/library", icon: FaBook, label: "Browse Books", color: "green" },
+    { path: "/borrowed", icon: FaBookOpen, label: "My Books", color: "purple" },
+    { path: "/favorites", icon: FaHeart, label: "Favorites", color: "pink" },
   ];
 
   // Add admin-only items
   if (user.role === "admin") {
     navItems.push(
-      { path: "/users", icon: FaUsers, label: "Users" },
-      { path: "/admin", icon: FaCog, label: "Admin Panel" }
+      { path: "/users", icon: FaUsers, label: "Users", color: "yellow" },
+      { path: "/admin", icon: FaCog, label: "Admin Panel", color: "gray" }
     );
   }
 
   const SidebarContent = () => (
-    <div className="flex flex-col h-full">
+    <div className="flex flex-col h-full bg-gradient-to-b from-gray-900 to-gray-800 text-white">
       {/* Header */}
-      <div className="flex items-center justify-between p-4 border-b border-gray-200">
+      <div className="flex items-center justify-between p-4 border-b border-gray-700">
         {!isCollapsed && (
           <div className="flex items-center">
-            <FaBook className="text-blue-600 mr-2" size={24} />
-            <span className="text-lg font-bold text-gray-800">Library</span>
+            <FaBook className="text-blue-400 mr-2" size={24} />
+            <span className="text-lg font-bold">Library</span>
           </div>
         )}
         <button
           onClick={() => setIsCollapsed(!isCollapsed)}
-          className="p-2 rounded-lg hover:bg-gray-100 transition-colors hidden lg:block"
+          className="p-2 rounded-lg hover:bg-gray-700 transition-colors hidden lg:block"
         >
           {isCollapsed ? <FaChevronRight /> : <FaChevronLeft />}
         </button>
         <button
           onClick={() => setIsMobileOpen(false)}
-          className="p-2 rounded-lg hover:bg-gray-100 transition-colors lg:hidden"
+          className="p-2 rounded-lg hover:bg-gray-700 transition-colors lg:hidden"
         >
           <FaTimes />
         </button>
       </div>
 
       {/* User Profile Section */}
-      <div className="p-4 border-b border-gray-200">
+      <div className="p-4 border-b border-gray-700">
         <div className="flex items-center">
           <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full flex items-center justify-center text-white font-bold">
             {user.username.charAt(0).toUpperCase()}
           </div>
           {!isCollapsed && (
             <div className="ml-3 flex-1 min-w-0">
-              <p className="text-sm font-medium text-gray-800 truncate">
-                {user.username}
-              </p>
-              <p className="text-xs text-gray-500 capitalize">{user.role}</p>
+              <p className="text-sm font-medium truncate">{user.username}</p>
+              <p className="text-xs text-gray-400 capitalize">{user.role}</p>
             </div>
           )}
         </div>
@@ -93,21 +93,23 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
 
       {/* Navigation Items */}
       <nav className="flex-1 p-4 space-y-2">
-        {navItems.map(({ path, icon: Icon, label }) => (
+        {navItems.map(({ path, icon: Icon, label, color }) => (
           <Link
             key={path}
             to={path}
             className={`flex items-center px-3 py-2.5 rounded-lg transition-all duration-200 group ${
               isActive(path)
-                ? "bg-blue-100 text-blue-700 shadow-sm"
-                : "text-gray-700 hover:bg-gray-100"
+                ? `bg-${color}-600 text-white shadow-lg`
+                : "text-gray-300 hover:bg-gray-700 hover:text-white"
             }`}
             onClick={() => setIsMobileOpen(false)}
           >
             <Icon
               className={`flex-shrink-0 ${
-                isActive(path) ? "text-blue-700" : "text-gray-500"
-              } group-hover:text-blue-600`}
+                isActive(path)
+                  ? "text-white"
+                  : "text-gray-400 group-hover:text-white"
+              }`}
               size={18}
             />
             {!isCollapsed && <span className="ml-3 font-medium">{label}</span>}
@@ -116,10 +118,10 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
       </nav>
 
       {/* Footer */}
-      <div className="p-4 border-t border-gray-200">
+      <div className="p-4 border-t border-gray-700">
         <button
           onClick={handleLogout}
-          className="flex items-center w-full px-3 py-2.5 rounded-lg text-red-600 hover:bg-red-50 transition-all duration-200 group"
+          className="flex items-center w-full px-3 py-2.5 rounded-lg text-red-400 hover:bg-red-900/20 hover:text-red-300 transition-all duration-200 group"
         >
           <FaSignOutAlt className="flex-shrink-0" size={18} />
           {!isCollapsed && <span className="ml-3 font-medium">Logout</span>}
@@ -132,7 +134,7 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
     <>
       {/* Desktop Sidebar */}
       <div
-        className={`hidden lg:flex lg:flex-col bg-white border-r border-gray-200 transition-all duration-300 ${
+        className={`hidden lg:flex lg:flex-col fixed left-0 top-0 h-full transition-all duration-300 z-30 ${
           isCollapsed ? "w-16" : "w-64"
         }`}
       >
@@ -142,15 +144,19 @@ const Sidebar: React.FC<SidebarProps> = ({ isCollapsed, setIsCollapsed }) => {
       {/* Mobile Toggle Button */}
       <button
         onClick={() => setIsMobileOpen(true)}
-        className="lg:hidden fixed top-4 left-4 z-50 p-2 bg-white rounded-lg shadow-md border border-gray-200"
+        className="lg:hidden fixed top-20 left-4 z-50 p-2 bg-gray-900 text-white rounded-lg shadow-md"
       >
-        <FaBars size={20} className="text-gray-600" />
+        <FaBars size={20} />
       </button>
 
       {/* Mobile Sidebar Overlay */}
       {isMobileOpen && (
-        <div className="lg:hidden fixed inset-0 z-40 bg-black bg-opacity-50">
-          <div className="fixed inset-y-0 left-0 w-64 bg-white">
+        <div className="lg:hidden fixed inset-0 z-40">
+          <div
+            className="absolute inset-0 bg-black bg-opacity-50"
+            onClick={() => setIsMobileOpen(false)}
+          />
+          <div className="fixed inset-y-0 left-0 w-64">
             <SidebarContent />
           </div>
         </div>
